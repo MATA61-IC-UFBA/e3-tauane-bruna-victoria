@@ -30,7 +30,6 @@ UCLETTER [A-Z]
 "void" 				    { return VOID; }
 "while" 				{ return WHILE; }
 "char"				    { return CHAR; }
-
 "<="				    { return LTE; }
 "=="				    { return EQ; }
 ">="				    { return GTE; }
@@ -39,8 +38,7 @@ UCLETTER [A-Z]
 "--"				    { return MM; }
 "&&"				    { return AND; }
 "||"				    { return OR; }
-
-"+" 				    { return "+"; }
+"+" 				    { return ["+"]; }
 "-"  				    { return "-"; }
 "*"  				    { return "*"; }
 "/" 				    { return "/"; } 
@@ -58,6 +56,9 @@ UCLETTER [A-Z]
 "]" 				    { return "]"; } 
 "{" 				    { return "{"; } 
 "}" 				    { return "}"; } 
+
+
+
 
 (" "|\t|\n|\r)  // skip whitespace
 \/\/.*   // skip comment
