@@ -30,6 +30,7 @@ UCLETTER [A-Z]
 "void" 				    { return VOID; }
 "while" 				{ return WHILE; }
 "char"				    { return CHAR; }
+
 "<="				    { return LTE; }
 "=="				    { return EQ; }
 ">="				    { return GTE; }
@@ -38,24 +39,25 @@ UCLETTER [A-Z]
 "--"				    { return MM; }
 "&&"				    { return AND; }
 "||"				    { return OR; }
-"+" 				    { return ["+"]; }
-"-"  				    { return "-"; }
-"*"  				    { return "*"; }
-"/" 				    { return "/"; } 
-"%" 				    { return "%"; } 
-"!" 				    { return "!"; } 
-"<" 				    { return "<"; } 
-">" 				    { return ">"; } 
-"=" 				    { return "="; }
-":" 				    { return ":"; } 
-";" 				    { return ";"; } 
-"," 				    { return ","; } 
-"(" 				    { return "("; } 
-")" 				    { return ")"; } 
-"[" 				    { return "["; }
-"]" 				    { return "]"; } 
-"{" 				    { return "{"; } 
-"}" 				    { return "}"; } 
+
+"+" 				    { return PLUS; }
+"-"  				    { return MINUS; }
+"*"  				    { return MUL; }
+"/" 				    { return DIV; } 
+"%" 				    { return PERCENT; } 
+"!" 				    { return NOT; } 
+"<" 				    { return LT; } 
+">" 				    { return GT; } 
+"=" 				    { return IS; }
+":" 				    { return COLON; } 
+";" 				    { return SEMICOLON; } 
+"," 				    { return COMMA; } 
+"(" 				    { return LPAREN; } 
+")" 				    { return RPAREN; } 
+"[" 				    { return LBRACKET; }
+"]" 				    { return RBRACKET; } 
+"{" 				    { return LBRACE; } 
+"}" 				    { return RBRACE; } 
 
 
 
